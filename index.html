@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Homework Week4</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-button">
+        <form id="search-form">
+          <input
+            type="search"
+            id="city-input"
+            placeholder="City"
+            autofocus="on"
+            autocomplete="off"
+          />
+          <input type="submit" value="🔍" />
+        </form>
+        <button id="current-position-button">current position</button>
+      </div>
+      <div class="weather-app">
+        <h1>Weather</h1>
+
+        <div class="last-looked-up">
+          <h5>Last looked up:</h5>
+          <div class="row row-cols-2">
+            <div class="col">Wien 15°/10°</div>
+            <div class="col">Linz 20°/15°</div>
+            <div class="col">Graz 12°/7°</div>
+            <div class="col">Salzburg 18°/12°</div>
+          </div>
+        </div>
+
+        <div class="current-city">
+          <h2 id="city">St. Pölten</h2>
+          <h4 id="date">current Date</h4>
+        </div>
+
+        <div class="todays-weather">
+          <h3>Today</h3>
+          <div id="temperatures">
+            <span id="current-temperature">25</span>
+            <span class="temperature-scale" id="celsius-temperature">°C</span>
+            <span id="break">|</span>
+            <span class="temperature-scale" id="fahrenheit-temperature">°F</span>
+            <span id="max-min-temp">
+              <span id="max-temp">30°</span>
+              <span>|</span>
+              <span id="min-temp">15°</span>
+            </span>
+          </div>
+        <div class="next-days">
+          <div class="row row-cols-2">
+            <div class="col">Tomorrow</div>
+            <div class="col">23°/13°</div>
+            <div class="col">Wednesday</div>
+            <div class="col">20°/10°</div>
+            <div class="col">Thursday</div>
+            <div class="col">22°/12°</div>
+            <div class="col">Friday</div>
+            <div class="col">25°/15°</div>
+            <div class="col">Saturday</div>
+            <div class="col">30°/10°</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

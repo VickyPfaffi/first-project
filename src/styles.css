@@ -1,0 +1,84 @@
+h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+#current-position-button,
+.search-button {
+  position: fixed;
+}
+
+.search-button {
+  top: 10px;
+  left: 10px;
+}
+
+.weather-app {
+  border: 2px solid gray;
+  border-radius: 10px;
+  max-width: 50%;
+  display: block;
+  margin: 50px auto;
+}
+
+.last-looked-up,
+.next-days,
+.current-city,
+.todays-weather {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.last-looked-up {
+  max-width: 400px;
+}
+
+.current-city {
+  max-width: 80%;
+}
+
+.todays-weather {
+  max-width: 200px;
+  line-height: 1;
+}
+
+.next-days {
+  max-width: 250px;
+}
+
+.temperature-scale {
+  color: blue;
+}
+
+.temperature-scale:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#max-min-temp {
+  position: relative;
+  left: -49px;
+}
+
+#celsius-temperature,
+#break,
+#fahrenheit-temperature {
+  position: relative;
+  top: -25px;
+}
+
+#current-temperature {
+  font-size: 50px;
+}
+
+#temperatures {
+  position: relative;
+  left: 30px;
+}
